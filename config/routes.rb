@@ -1,4 +1,12 @@
 Csl::Application.routes.draw do
+  get "static/index"
+
+  get "static/events"
+
+  get "static/join"
+
+  get "static/members"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
