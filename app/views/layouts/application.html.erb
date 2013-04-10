@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Csl</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta content='UIUC Starcraft ~ The University of Illinois Collegiate Starleague is a student organization of starcraft players and fans. We participate in tournaments and host social events.' name='description'>
+    <meta content='uiuc starcraft, uiuc sc2, uiuc csl, illinois starcraft, illinois sc2, illinois csl, university of illinois, champaign, urbana, starcraft, sc2' name='keywords'>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <title>UIUC Starcraft - Collegiate Starleague, Tournaments, and Social Events</title>
+    <%= favicon_link_tag %>
+    
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <%= csrf_meta_tag %>
+  	<%= render :partial => 'shared/ga' %>
+  </head>
+  <body>
+    <header>
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.png', :alt => 'logo' %>
+          UIUC Starcraft
+        <% end %>
+    </header>
+    <%= render :partial => 'shared/nav' %>
+    <section id="container">
+      <%= render :partial => 'shared/flashes' %>
+      <%= yield %>
+    </section>
+  </body>
 </html>
