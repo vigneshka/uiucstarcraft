@@ -1,0 +1,62 @@
+body {
+	@include outer-container;
+	
+	header{
+		margin-top: 20px;
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	nav#main_nav {
+		@include clearfix;
+		ul {
+			width: 100%;
+			float: left;
+			margin: 0 0 20px 0;
+			padding: 0;
+			list-style: none;
+			background-color: #f2f2f2;
+			border: 1px solid #ccc;
+			li {
+				float: left;
+				a {
+					display: block;
+					padding: 8px 15px;
+					text-decoration: none;
+					font-weight: bold;
+					color: #069;
+					border-right: 1px solid #ccc;
+
+					&:hover{
+						color: white;
+						background-color: orange;
+					}
+				}
+			}
+		}
+	}
+	
+	section#container{
+		
+		table#members{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+	    tr:nth-child(even) {background: #fff}
+			tr:nth-child(odd) {background: #f2f2f2}
+			
+			tr{
+				#name{
+					font-size: 25px;
+					font-weight:900;
+				}
+				#points{
+					font-size: 20px;
+				}
+			}
+		}
+
+	}
+}
