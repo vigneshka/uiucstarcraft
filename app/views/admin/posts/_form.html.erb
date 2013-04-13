@@ -1,0 +1,6 @@
+<%= simple_form_for [:admin, @post], :validate => true do |form| %>
+  <%= form.input :title %>
+  <%= form.input :author %>
+  <%= form.input :content %>
+  <%= form.submit 'Save Post' %>
+<% end %>

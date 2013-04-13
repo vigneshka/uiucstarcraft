@@ -28,7 +28,7 @@ def sorted
   ["grandmaster", "master", "diamond", "platinum", "gold", "silver", "bronze"].each do |league|
   	object.each do |player|
   		if player["league"] == "#{league}"
-  			temp.push([player["members"][0]["name"], player["members"][0]["fav_race"], player["league"], player["points"]])
+  			temp.push([player["members"][0]["fav_race"], player["members"][0]["name"],  player["league"], player["points"], player["members"][0]["bnet_id"]])
   		end
   	end
   	temp.sort! { |a, b| b[3]<=>a[3] }

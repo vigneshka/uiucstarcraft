@@ -7,4 +7,11 @@ Csl::Application.routes.draw do
   match "/join" => "static#join"
   match "/members" => "static#members"
 
+
+  match "/admin" => "admin/posts#index"
+
+  namespace :admin do
+	  resources :posts
+	end
+
 end

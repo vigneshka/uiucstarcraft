@@ -1,27 +1,28 @@
-body {
+body{
 	@include outer-container;
 	
 	header{
 		margin-top: 20px;
 		img{
 			display: block;
-			margin: 0 auto;
+			margin: 5px auto;
 		}
 	}
-
+	// --nav start
 	nav#main_nav {
-		@include clearfix;
-		ul {
+		@include row(block);
+		
+		ul{
 			width: 100%;
 			float: left;
-			margin: 0 0 20px 0;
+			margin: 0;
 			padding: 0;
 			list-style: none;
 			background-color: #f2f2f2;
 			border: 1px solid #ccc;
-			li {
+			li{
 				float: left;
-				a {
+				a{
 					display: block;
 					padding: 8px 15px;
 					text-decoration: none;
@@ -36,27 +37,32 @@ body {
 				}
 			}
 		}
-	}
+	} // --nav end
 	
+// --container start
 	section#container{
-		
+		//--table start
 		table#members{
-			width: 100%;
+			width: 80%;
 			margin: 0 auto;
 			text-align: center;
+			//row styling, on hover effects
 	    tr:nth-child(even) {background: #fff}
 			tr:nth-child(odd) {background: #f2f2f2}
-			
-			tr{
-				#name{
-					font-size: 25px;
-					font-weight:900;
-				}
-				#points{
-					font-size: 20px;
-				}
+			tr:hover {
+				background: orange;
+				color: white;
+				td a{color: white;}
 			}
-		}
-
-	}
+			td{
+				a{
+					text-decoration: none;
+					color: #000;
+				}
+				font-size: 20px;
+				font-weight:600;
+			}
+			#points{font-weight:300;}
+		}// --table end
+	}// --container end
 }

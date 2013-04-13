@@ -1,0 +1,10 @@
+<section id='<%= post.id -%>' class='post'>
+  <h1><%= post.title %></h1>
+  <h2><%= post.author %></h2>
+  <p><%= post.content %></p>
+
+  <ul class='links'>
+      <li><%= link_to 'Edit', edit_admin_post_path(post) %></li>
+      <li><%= link_to 'Delete', admin_post_path(post), :data => { :confirm => 'Are you sure?' }, :method => :delete %></li>
+  </ul>
+</section>

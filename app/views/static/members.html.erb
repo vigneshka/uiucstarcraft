@@ -1,19 +1,13 @@
-<h1 >Members</h1>
-
-<p>If you would like to be included in this listing, please send your <a href="http://www.sc2ranks.com/">sc2ranks</a> profile via the contact form.<p>
+<p>Click the player name for full statistics.
+		If you would like to be included in this listing,
+		please send your <a href="http://www.sc2ranks.com/">sc2ranks</a>
+		profile via the contact form.</p>
 
 <table id="members">
-	<!-- 	<tr>
-		<th>Race</th>
-		<th>Name</th>
-		<th>League</th>
-		<th>Points</th>
-	</tr> -->
-	
 	<% @data.each do |player| %>
 	<tr>
-		<td><%= image_tag("race/#{player[1]}.png", :alt => "#{player[1]}") %></td>
-		<td id="name"><%= player[0] %></td>
+		<td><%= image_tag("race/#{player[0]}.png", :alt => "#{player[1]}") %></td>
+		<td><%= link_to("#{player[1]}", "http://sc2ranks.com/us/#{player[4]}/#{player[1]}")%></td>
 		<td><%= image_tag("league/#{player[2]}.png", :alt => "#{player[2]}") %></td>
 		<td id="points"><%=	player[3] %> pts</td>
 	</tr>
