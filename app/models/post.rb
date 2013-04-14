@@ -1,7 +1,6 @@
 class Post < ActiveRecord::Base
-  attr_accessible :title, :author, :content, :published_at
+  attr_accessible :title, :content
 
   validates :title, presence: true
-  validates :author, presence: true
   validates :content, presence: true
 end

@@ -1,0 +1,39 @@
+.admin{
+	margin-top: 20px;
+	text-align: center;
+
+	.center{
+	text-decoration:none;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	}
+
+	.post{
+		@include row();
+		margin-bottom: 30px;
+		// font-size: 15px;
+	 
+		ul.options{
+			list-style-type: none;
+			margin:0;
+			padding:0;
+
+			li{
+				display: inline;
+				background-color: orange;
+				a{
+					display: inline-block;
+					padding: 8px 15px;
+					text-decoration: none;
+					color: white;
+					}}
+		}
+	}
+}
+
+.margin{
+	margin-left: 120px;
+	}
