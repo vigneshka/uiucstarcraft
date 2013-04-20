@@ -1,4 +1,4 @@
-<section class='post'>
+<section id='adminpost' >
   <p><%= post.created_at.strftime("%b %d, %Y") %>: <strong><%= post.title %></strong></p> 
   <ul class='options'>
       <li><%= link_to 'Edit', edit_admin_post_path(post) %></li>

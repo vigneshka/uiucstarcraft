@@ -18,7 +18,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: orange;
+  background-color: #F54828;
   color: #FFFFFF;
   font-weight: bold;
   text-transform: uppercase;
@@ -26,6 +26,9 @@ input[type="submit"] {
   border: 0px;
   margin: 0px;
   padding: 8px 12px;
+  &:hover{
+    background-color: #AC321C;
+  }
 }
 
 

@@ -4,8 +4,7 @@ Csl::Application.routes.draw do
 
   match "/home" => "static#index"
   match "/events" => "static#events"
-  match "/join" => "static#join"
-  match "/members" => "static#members"
+  match "/ranking" => "static#ranking"
 
 
   match "/admin" => "admin/posts#index"

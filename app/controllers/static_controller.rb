@@ -3,15 +3,14 @@ class StaticController < ApplicationController
 	require 'json'
  
  	def index
+    @posts = Post.order('created_at DESC').limit(2)
 	end
 
   def events
+    @posts = Post.order('created_at DESC')
   end
 
-  def join
-  end
-
-  def members
+  def ranking
   	@data = sorted
   end
 end
