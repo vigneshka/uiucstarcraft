@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+// fadeout for flash messages
+$(function() {
+   $('#flash').delay(500).fadeIn('normal', function() {
+      $(this).delay(1500).fadeOut();
+   });
+});
