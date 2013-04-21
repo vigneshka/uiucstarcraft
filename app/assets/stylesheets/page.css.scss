@@ -27,28 +27,22 @@
 		height: 300px;
 		}
 	}
-	
 	#posts{
 		@include span-columns(9);
 	}
-
 }
 
-
+#adminhome{
+	margin-top: 20px;
+	text-align: center;
+	p{
+		margin: 20px 0 0;
+	}
+}
 
 #adminpost{
-		// // @include row();
-		// margin-top: 30px;
-	}
-	
-	#admin{
-		margin-top: 20px;
 		text-align: center;
-		p{
-			margin: 20px 0 0;
-		}
 	}
-
 #comments{
 	text-align: center;
 }

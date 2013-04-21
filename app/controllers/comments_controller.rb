@@ -7,13 +7,13 @@ class CommentsController < ApplicationController
     body = params[:comment][:body]
 
     if body.blank?
-      flash[:error] = 'Email was not sent. Please enter some text.'
+      flash[:error] = "Email was not sent. Please enter some text."
     else
       if from.blank?
-        flash[:error] = 'Email was not sent. Please enter your email address.'
+        flash[:error] = "Email was not sent. Please enter your email address."
       else
         Mailer.comment(from, body).deliver
-        flash[:success] = "Thank-you for submitting! You'll hear from us soon."
+        flash[:success] = "Thank you for submitting! You'll hear from us soon."
       end
     end
 

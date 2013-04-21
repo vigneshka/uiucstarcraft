@@ -1,7 +1,5 @@
-<section id='adminpost' >
-  <p><%= post.created_at.strftime("%b %d, %Y") %>: <strong><%= post.title %></strong></p> 
-  <ul class='options'>
-      <li><%= link_to 'Edit', edit_admin_post_path(post) %></li>
-      <li><%= link_to 'Delete', admin_post_path(post), :data => { :confirm => 'Are you sure?' }, :method => :delete %></li>
-  </ul>
-</section>
+<p><%= post.created_at.strftime("%b %d, %Y") %>: <strong><%= post.title %></strong></p> 
+<ul class='options'>
+    <li><%= link_to 'Edit', edit_admin_post_path(post) %></li>
+    <li><%= link_to 'Delete', admin_post_path(post), :data => { :confirm => 'Are you sure?' }, :method => :delete %></li>
+</ul>
