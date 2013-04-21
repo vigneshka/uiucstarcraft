@@ -7,6 +7,8 @@ Csl::Application.routes.draw do
   match "/ranking" => "static#ranking"
 
   resources :comments, :only => [:new, :create]
+  
+  match "/contact" => "comments#new"
   match "/admin" => "admin/posts#index"
 
   namespace :admin do
