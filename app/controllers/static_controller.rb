@@ -28,7 +28,7 @@ def sorted
 	object = JSON.parse(open("http://sc2ranks.com/api/clist/11658/us/all/1/0.json?appKey=uiucstarcraft.com").read)
   ["grandmaster", "master", "diamond", "platinum", "gold", "silver", "bronze"].each do |league|
   	object.each do |player|
-  		if player["league"] == "#{league}"
+  		if player["league"] == "#{league}" && player["expansion"] == 1
   			temp.push([player["members"][0]["fav_race"], player["members"][0]["name"],  player["league"], player["points"], player["members"][0]["bnet_id"]])
   		end
   	end

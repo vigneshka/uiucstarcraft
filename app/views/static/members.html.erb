@@ -26,10 +26,10 @@
 		<table>
 			<% @data.each do |player| %>
 			<tr>
-				<td class=<%="img-#{player[0]}"%> id="race"></td> 
+				<td class="<%="img-#{player[0]} race" %>"></td> 
 				<td><%= link_to("#{player[1]}", "http://sc2ranks.com/us/#{player[4]}/#{player[1]}")%></td>
-				<td class=<%= "img-#{player[2]}"%> id="league"> </td> 
-				<td id="points"><%=	player[3] %></td>
+				<td class="<%= "img-#{player[2]} league"%>"> </td> 
+				<td class="points"><%=	player[3] %></td>
 			</tr>
 			<% end %>
 		</table>
