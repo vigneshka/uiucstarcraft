@@ -13,9 +13,9 @@ class Admin::PostsController < AdminController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to admin_posts_path }
-        expire_fragment("latest")
+      	expire_fragment("latest")
         expire_fragment("posts")
+        format.html { redirect_to admin_posts_path }
       else
         format.html { render :action => "new" }
       end
@@ -32,6 +32,8 @@ class Admin::PostsController < AdminController
 
 		respond_to do |format|
       if @post.update_attributes(params[:post])
+        expire_fragment("latest")
+        expire_fragment("posts")
         format.html { redirect_to admin_posts_path }
       else
         format.html { render :action => "edit" }
@@ -44,6 +46,8 @@ class Admin::PostsController < AdminController
 
 		respond_to do |format|
       if @post.destroy
+      	expire_fragment("latest")
+        expire_fragment("posts")
         format.html { redirect_to admin_posts_path }
       end
     end
