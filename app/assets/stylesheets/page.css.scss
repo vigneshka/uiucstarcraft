@@ -8,13 +8,17 @@
 			@include row();
 			margin-top: 10px;
 		}
-		a{
+		a.image{
 			float: left;
 			height: 50px;
 			width: 50px;
 			margin-right: 20px;
 		}
 		p{
+			a{
+				text-decoration: none;
+				color: #2E0D23;
+			}
 			margin-top: 0;
 		}
 	}
