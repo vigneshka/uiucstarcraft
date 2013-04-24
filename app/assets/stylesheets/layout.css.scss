@@ -1,10 +1,10 @@
 //default text, highlight, link colors
 html{
 	color: #2E0D23;
-	::-moz-selection { background: #432539; color: #fff; text-shadow: none; }
-	::selection { background: #432539; color: #fff; text-shadow: none; }
+	::-moz-selection { background: #594C43; color: #fff; text-shadow: none; }
+	::selection { background: #594C43; color: #fff; text-shadow: none; }
 	a{
-		color: #F54828;
+		color: #EA7525;
 	}
 }
 
@@ -34,7 +34,7 @@ body{
 
 	// --nav start
 	ul#nav{
-		background-color: #2E0D23;
+		background-color: #0D1B24;
 		font-weight: bold;
     list-style: none;
     margin: 0 auto;
@@ -49,7 +49,7 @@ body{
 			text-decoration: none;
 			color: white;
 			&:hover{
-				background-color: #F54828;
+				background-color: #EA7525;
 			}
 		}
 	}// --nav end
@@ -58,13 +58,13 @@ body{
 	.box{
 		margin-top: 15px;
 		padding: 10px;
-		background-color: #FFEDBF;
-		border: 4px solid #F7803C;
+		background-color: #DCEBF0;
+		border: 4px solid #4A748C;
 
 		h1{
 			margin-top: 0;
 			text-align: center;
-			background-color: #F7803C;
+			background-color: #4A748C;
 			color: white;
 		}
 		h2{
@@ -82,7 +82,7 @@ body{
 	// --button start
 	.button{
 		display: inline-block;
-	  background-color: #F54828;
+	  background-color: #EA7525;
     color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
@@ -90,7 +90,7 @@ body{
     font-size: 14px;
     padding: 8px 12px;
     &:hover{
-    	background-color: #AC321C;
+    	background-color: #D36921;
     }
 	}
 	ul.options{
@@ -99,9 +99,9 @@ body{
 		padding:0;
 		li{
 			display: inline;
-			background-color: #F7803C;
+			background-color: #EA7525;
 			&:hover{
-				background-color: 	#C66630;
+				background-color: 	#D36921;
 			}
 			a{
 				padding: 8px 15px;
@@ -118,9 +118,9 @@ body{
 		text-align: center;
 		//row styling, on hover effects
     tr:nth-child(even) {background-color: white}
-		tr:nth-child(odd) {background-color: #F8E4C1}
+		tr:nth-child(odd) {background-color: #DCEBF0}
 		tr:hover {
-			background: #F7803C;
+			background: #4A748C;
 			color: white;
 			td a{color: white;}
 		}
