@@ -17,13 +17,16 @@
   	<%= render :partial => 'shared/ga' %>
   </head>
   <body>
-    <header>
-      <div class="img-logo"></div>
-    </header>
-    <%= render :partial => 'shared/nav' %>
-    <div id="container">
-      <%= render :partial => 'shared/flashes' %>
-      <%= yield %>
+    <div id="wrapper">
+      <header>
+        <div class="img-logo"></div>
+      </header>
+      <%= render :partial => 'shared/nav' %>
+      <div id="container">
+        <%= render :partial => 'shared/flashes' %>
+        <%= yield %>
+      </div>
+      <footer> web design by <b>Vignesh Hirudayakanth</b></footer>
     </div>
   </body>
 </html>
