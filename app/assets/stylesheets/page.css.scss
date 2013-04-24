@@ -47,7 +47,8 @@
 
 #comments, #replays, #adminpost{
 	text-align: center;
-	width: 500px;
+	max-width: 500px;
+	width: 100%;
 	margin: 15px auto;
 }
 
