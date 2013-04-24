@@ -4,13 +4,17 @@ gem 'rails', '3.2.13'
 
 gem 'jquery-rails'
 gem 'simple_form'
+gem "heroku"
+
+
 
 group :production do
 	gem "pg"
 	gem 'dalli'
+	gem "thin"
 end
 
-group :development do
+group :development, :test do
 	gem 'sqlite3'
 end
 
