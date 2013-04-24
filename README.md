@@ -17,9 +17,9 @@ It's a Rails app running [Ruby 1.9](http://www.ruby-lang.org/en/downloads) and u
 Setup
 -----
 
-For local development, install the required gems, minus the production and staging gemspecs
+For local development, install the required gems, minus the production gemspecs
 
-    bundle install --without production staging
+    bundle install --without production
 
 Setup the development database (uses sqlite)
 
