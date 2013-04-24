@@ -28,7 +28,11 @@ body{
 		left:0;
 		text-align: right;
 		color: #4A748C;
-		font-size: 14px;
+		a{
+			text-decoration: none;
+			color: #4A748C;
+			font-size: 14px;
+		}
 	}
 
 	// --header start
