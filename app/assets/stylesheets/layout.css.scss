@@ -36,7 +36,8 @@ body{
 		margin-top: 20px;
 		div{
 			height: 35px;
-			width: 458px;
+			width: 100%;
+			max-width: 458px;
 			margin: 0 auto;
 		}
 	} // --header end
