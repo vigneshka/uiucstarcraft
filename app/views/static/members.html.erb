@@ -1,4 +1,6 @@
 <div id="members">
+	
+	<% cache("officers") do %>
 	<div id="officers" class="box">
 		<h1>Officers</h1>
 			<h2>President: Jang Min Chul </h2>
@@ -9,12 +11,14 @@
 				<h3>blazeit@gmail.com</h3>
 				<p> The Emperor.</p>
 	</div>
+	<% end %>
 
 	<div id="ranking">
 		<p>Click the player name for full statistics.
 			If you would like to be included in this listing,
 			please send your <a href="http://www.sc2ranks.com/">sc2ranks</a>
 			profile via the <a href="/contact">contact form</a>.</p>
+		<% cache("table", :expires_in => 2.hours) do %>
 		<table>
 			<% @data.each do |player| %>
 			<tr>
@@ -25,6 +29,8 @@
 			</tr>
 			<% end %>
 		</table>
+		<% end %>
+	
 	</div>
 
 </div>

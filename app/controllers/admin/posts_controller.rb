@@ -11,10 +11,11 @@ class Admin::PostsController < AdminController
 	def create
 		@post = Post.new(params[:post])
 
-
     respond_to do |format|
       if @post.save
         format.html { redirect_to admin_posts_path }
+        expire_fragment("latest")
+        expire_fragment("posts")
       else
         format.html { render :action => "new" }
       end

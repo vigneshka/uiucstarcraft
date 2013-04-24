@@ -1,10 +1,10 @@
 <div id="events">
 	
 	<div class="box" id="calendar">
-		
 		<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uiucstarcraft%40gmail.com&amp;color=%23125A12&amp;ctz=America%2FChicago" style=" border-width:0 " frameborder="0" scrolling="no"></iframe>
 	</div>
 
+	<% cache ("posts") do %>
 	<div id="posts" class="box">
 		<h1>Posts</h1>
 		<% @posts.each do |p| %>
@@ -13,7 +13,6 @@
 		<p><%= p.content.html_safe %></p>
 		<% end %>
 	</div>
-
-	
+	<% end %>
 
 </div>
