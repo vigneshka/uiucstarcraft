@@ -17,6 +17,7 @@
 // fadeout for flash messages
 $(function() {
    $('#flash').delay(500).fadeIn('normal', function() {
-      $(this).delay(1500).fadeOut();
+      $(this).delay(2000).fadeOut();
    });
 });
+

@@ -8,15 +8,16 @@
 			@include row();
 			margin-top: 10px;
 		}
-		.image{
+		a{
 			float: left;
-			padding-right: 20px;
+			height: 50px;
+			width: 50px;
+			margin-right: 20px;
 		}
-		.description{
-			p{margin-top: 0;}
+		p{
+			margin-top: 0;
 		}
 	}
-	
 }
 
 #events{
@@ -40,11 +41,19 @@
 	}
 }
 
-#adminpost{
-		text-align: center;
-	}
-#comments{
+#comments, #replays, #adminpost{
 	text-align: center;
+	width: 500px;
+	margin: 15px auto;
 }
 
+#members{
+	#officers{
+		@include span-columns(4);
+	}
 
+	#ranking{
+		@include span-columns(8);
+		@include omega;
+	}
+}

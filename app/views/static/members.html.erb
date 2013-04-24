@@ -1,0 +1,33 @@
+<div id="members">
+	<div id="officers" class="box">
+		<h1>Officers</h1>
+			<h2>President: Jang Min Chul </h2>
+				<h3>yoloswag420@gmail.com</h3>
+				<p>Obama Toss.</p>
+				<br>
+			<h2>Vice President: Lim Yo Hwan</h2>
+				<h3>blazeit@gmail.com</h3>
+				<p> The Emperor.</p>
+	</div>
+
+	<div id="ranking">
+		<p>Click the player name for full statistics.
+			If you would like to be included in this listing,
+			please send your <a href="http://www.sc2ranks.com/">sc2ranks</a>
+			profile via the <a href="/contact">contact form</a>.</p>
+		<table>
+			<% @data.each do |player| %>
+			<tr>
+				<td class=<%="img-#{player[0]}"%> id="race"></td> 
+				<td><%= link_to("#{player[1]}", "http://sc2ranks.com/us/#{player[4]}/#{player[1]}")%></td>
+				<td class=<%= "img-#{player[2]}"%> id="league"> </td> 
+				<td id="points"><%=	player[3] %></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+
+</div>
+
+
+

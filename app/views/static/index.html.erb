@@ -1,5 +1,4 @@
 <div id="home">
-
 	<div class="box" id="latest">
 		<h1>Latest Posts</h1>
 		<% @posts.each do |p| %>
@@ -12,40 +11,25 @@
 
 	<div class="box" id="new">
 			<h1>Join</h1>
+			
 			<div class="media">
-				<div class="image">
-					<%= link_to image_tag("logo/facebook.png"), 'https://www.facebook.com/groups/213476362041371/?fref=ts' %>
-				</div>
-				<div class="description">
-					<p>Discussion, News, Pictures</p>
-				</div>
+				<a href="https://www.facebook.com/groups/213476362041371/?fref=ts" class="img-facebook"></a>
+				<p>Discussion, News, Pictures</p>
 			</div>
+			
 			<div class="media">
-				<div class="image">
-					<%= link_to image_tag("logo/skype.png"), 'skype:?chat&blob=1NKx2ZpIjNI3ogMyG8HyqHZM7jY0JyNWGwFVJ37mr_IFHgIkYcPtU_3FLzCuq227caaNVq96ZTD-dikcD3GhS_653S7sIHeif6Am8u9pUlWJr4gkastCXD96eQhi9DgSL9fshr6lnRbCpYOhj0ptqpeF9QC8CZcvxIrPcbkbzOEJDC0XYa9dCY_qGvppXsypghINOHKtYG9jnsbu1EoXZNDfy7TB_WfH8GQP4g' %>
-				</div>
-				<div class="description">
-					<p>General Chat (<i>/alertsoff</i>) </p>
-				</div>
+				<a href="skype:?chat&blob=1NKx2ZpIjNI3ogMyG8HyqHZM7jY0JyNWGwFVJ37mr_IFHgIkYcPtU_3FLzCuq227caaNVq96ZTD-dikcD3GhS_653S7sIHeif6Am8u9pUlWJr4gkastCXD96eQhi9DgSL9fshr6lnRbCpYOhj0ptqpeF9QC8CZcvxIrPcbkbzOEJDC0XYa9dCY_qGvppXsypghINOHKtYG9jnsbu1EoXZNDfy7TB_WfH8GQP4g" class="img-skype"></a>
+				<p>General Chat (<i>/alertsoff</i>) </p>
 			</div>
+	
 			<div class="media">
-				<div class="image">
-					<%= link_to image_tag("logo/twitch.png"), 'http://www.twitch.tv/hwaitingillini' %>
-				</div>
-				<div class="description">
-					<p>Tournament Stream</p>
-				</div>
+				<a href="http://www.twitch.tv/hwaitingillini" class="img-twitch"></a>
+				<p>Tournament Stream</p>
 			</div>
+
 			<div class="media">
-				<div class="image">
-					<%= image_tag("logo/battle.png") %>
-				</div>
-				<div class="description">
-					<p>Channel: UIUC</p>
-				</div>
+				<a href="#" class="img-battle"></a>
+				<p>Channel: UIUC</p>
 			</div>
 	</div>
-
-	
-
 </div>

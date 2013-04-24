@@ -1,6 +1,4 @@
 class StaticController < ApplicationController
-  require 'open-uri'
-	require 'json'
  
  	def index
     @posts = Post.order('created_at DESC').limit(2)
@@ -10,7 +8,7 @@ class StaticController < ApplicationController
     @posts = Post.order('created_at DESC')
   end
 
-  def ranking
+  def members
   	@data = sorted
   end
 end
@@ -20,6 +18,10 @@ private
 # lopps through each league, sorts all players belonging to that league by their points, adds players to the members array
 # return value is an array of players by their ladder ranking
 def sorted
+
+  require 'open-uri'
+  require 'json'
+
 	members = []
 	temp = []
 

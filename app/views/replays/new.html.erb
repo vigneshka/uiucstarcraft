@@ -1,0 +1,10 @@
+<div id="replays" class="box">
+	<h1>Replay Upload:</h1>
+	<%= simple_form_for :replay, :url => replays_path, :html => {:multipart => true} do |form| %>
+	  <%= form.input :from, :label => "Name", :required => true %>
+	  <%= form.input :body, :label => "Description", :as => :text, :required => true %>
+	  <%= form.input :file, :label => 'File (.SC2Replay)', :as => :file %>
+	  <%= form.submit "Submit" %>
+	<% end %>
+	<p>you can also email us at uiucstarcraft@gmail.com</p>
+</div>
